@@ -3,6 +3,11 @@ var Contact = AV.Object.extend('Contact');
 ga('send', 'pageview');
 
 $(function() {
+    var bgImg = 'url(' + constants.bgImg + ')';
+    $('body').css({
+        backgroundImage: bgImg,
+        backgroundSize: 'cover'
+    });
     $('.intro')[0].innerHTML = constants.intro;
     $('#visitAble')[0].innerHTML = constants.buttonVisit;
     $('#visitUnable')[0].innerHTML = constants.buttonUnvisit;
